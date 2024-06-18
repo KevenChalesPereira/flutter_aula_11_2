@@ -19,7 +19,7 @@ class ListaSliver extends StatelessWidget {
       delegate:
           SliverChildBuilderDelegate(childCount: dias.length, (context, index) {
         return ListTile(
-          title: Text(dias[index]),
+          title: Container(height: 100, child: Text(dias[index])),
         );
       }),
     );

@@ -29,8 +29,8 @@ class MyApp extends StatelessWidget {
         //
         // This works for code too, not just values: Most code changes can be
         // tested with just a hot reload.
-        colorScheme:
-            ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 4, 64, 27)),
+        colorScheme: ColorScheme.fromSeed(
+            seedColor: const Color.fromARGB(255, 4, 64, 27)),
         useMaterial3: true,
       ),
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
@@ -78,19 +78,19 @@ class _MyHomePageState extends State<MyHomePage> {
     // The Flutter framework has been optimized to make rerunning build methods
     // fast, so that you can just rebuild anything that needs updating rather
     // than having to individually change instances of widgets.
-    return const Scaffold(
+    return Scaffold(
       body: CustomScrollView(
         slivers: [
-          SliverAppBar(
+          const SliverAppBar(
             foregroundColor: Colors.lightGreen,
             backgroundColor: Color.fromARGB(255, 14, 70, 10),
             leading: Icon(Icons.menu),
             title: Text('Barra que some'),
             expandedHeight: 300,
-            collapsedHeight: 150,
+            collapsedHeight: 60,
             floating: false,
           ),
-          // ListaSliver(),
+          ListaSliver(),
         ],
       ),
     );
